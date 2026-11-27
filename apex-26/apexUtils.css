@@ -1,0 +1,52 @@
+/*
+ * apexUtils.css — styles for apexUtils.js 3.x
+ * Uses Universal Theme CSS variables with fallbacks, so it follows the active
+ * theme style (including Iris in 26.1) and dark mode. No inline styles are
+ * injected by the JS, which keeps pages compatible with a strict CSP.
+ */
+
+.cu-min-h-100 { min-height: 100px; }
+
+/* Tooltip */
+.cu-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  max-width: 400px;
+  padding: 8px 10px;
+  border-radius: var(--ut-shell-border-radius, 4px);
+  background: var(--ut-component-background-color, #f0f0f0);
+  color: var(--ut-component-text-default-color, #111);
+  box-shadow: var(--ut-shadow-md, 0 2px 8px rgba(0, 0, 0, .2));
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  pointer-events: none;
+}
+.cu-tooltip * { max-width: 100%; white-space: normal; }
+.cu-tooltip img { object-fit: contain; object-position: 50% 0; }
+.cu-tooltip--hidden { visibility: hidden; }
+
+/* In-region info / no-data / error messages */
+.cu-dom-msg {
+  margin: 10px;
+  text-align: center;
+  color: var(--ut-component-text-muted-color, #707070);
+}
+.cu-dom-msg__icon {
+  font-size: 22px;
+  line-height: 26px;
+  margin-right: 5px;
+  color: var(--ut-component-icon-color, #d0d0d0);
+}
+.cu-dom-msg__text {
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cu-dom-msg--lg { margin: 12px; padding: 10px 0; }
+.cu-dom-msg--lg .cu-dom-msg__icon { display: block; font-size: 32px; margin: 0 auto 16px; }
+.cu-dom-msg--lg .cu-dom-msg__text { display: block; }
+.cu-dom-msg--warn .cu-dom-msg__icon { color: var(--ut-palette-warning, #ffcb3d); }

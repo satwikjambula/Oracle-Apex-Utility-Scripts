@@ -15,3 +15,12 @@ Improved Efficiency: Handle front-end validations without waiting for round trip
 * Shared few of the Page level and Interactive Grid related Utlity scripts
 * 1. apexUtils.js
 * 2. igUtils.js
+
+# APEX 26.x versions
+Updated scripts for Oracle APEX 26.1 / 26.2 live in [`apex-26/`](apex-26/README.md): apexUtils.js 3.0, igUtils.js 3.0, and a new irUtils.js for 26.1 Interactive Report row selection.
+Note: the 2.x files in this folder fail to load (a `const apex` temporal-dead-zone error); use the `apex-26/` versions.
+
+# VBCS and JET
+* [`apex-26/vbcs/`](apex-26/vbcs/README.md): Visual Builder-style action chain API for APEX (`$page` variables, `Actions.callRest`, `navigateToPage` …), with a PL/SQL proxy. Intended as the landing zone when moving VBCS apps to APEX.
+* [`apex-26/jet/`](apex-26/jet/README.md): JET chart helpers for APEX chart regions.
+* [`jet/`](jet/README.md): standalone AMD module for JET 19/20 and VBCS apps (Fusion / ORDS REST data providers, MutableArrayDataProvider helpers, converters, messages).
