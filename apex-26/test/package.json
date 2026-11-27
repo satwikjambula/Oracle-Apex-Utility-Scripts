@@ -1,0 +1,7 @@
+{
+  "name": "apex-26-utils-tests",
+  "private": true,
+  "description": "Smoke tests for the APEX 26 utility scripts, run against a mocked apex namespace in jsdom.",
+  "scripts": { "test": "node --test" },
+  "devDependencies": { "jquery": "^3.7.1", "jsdom": "^25.0.1" }
+}
