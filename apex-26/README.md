@@ -8,6 +8,7 @@ Updated versions of the utility scripts for **Oracle APEX 26.1 and 26.2** (26.2 
 | `apexUtils.css` | 3.0.0 | Styles for the tooltip and in-region messages (Universal Theme CSS variables) |
 | `igUtils.js` | 3.0.0 | Interactive Grid: selection, cell ranges, record ids, refresh, filters, headings |
 | `irUtils.js` | 1.0.0 | **New.** Interactive Report row selection (26.1 `interactiveReportRegion` API) |
+| `jet/apexJetUtils.js` | 1.0.0 | **New.** Composable JET chart Initialization helpers + JET module loader. See [jet/README.md](jet/README.md) |
 | `vbcs/` | 1.0.0 | **New.** Visual Builder-style action chain API for APEX + PL/SQL proxy. See [vbcs/README.md](vbcs/README.md) |
 
 ## Why a new version
